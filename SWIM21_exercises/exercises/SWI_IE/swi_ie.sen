@@ -1,0 +1,69 @@
+                       PARAMETER SENSITIVITIES: CASE swi_ie
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             100.000          32.3119    
+   deep_hk         k_pg             2000.00          23.3536    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             66.9131          19.4751    
+   deep_hk         k_pg             1758.70          3.93605    
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             55.8907          8.75461    
+   deep_hk         k_pg             1451.35          5.95084    
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             52.4914          18.3514    
+   deep_hk         k_pg             1230.23          13.0838    
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             50.2406          14.9560    
+   deep_hk         k_pg             1035.11          11.0248    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "heads" ----->
+
+ Number of observations with non-zero weight =     7
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             50.3552          14.3764    
+   deep_hk         k_pg             1048.89          3.97885    
+
+
+
+ Composite sensitivities for observation group "conc" ----->
+
+ Number of observations with non-zero weight =     7
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             50.3552          5.78627    
+   deep_hk         k_pg             1048.89          3.84933    
+
+
+
+ Composite sensitivities for observation group "age" ----->
+
+ Number of observations with non-zero weight =     7
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             50.3552          42.4740    
+   deep_hk         k_pg             1048.89          17.8561    
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    21
+ Parameter name    Group          Current value    Sensitivity
+   shall_hk        k_pg             50.3552          15.0709    
+   deep_hk         k_pg             1048.89          6.23154    

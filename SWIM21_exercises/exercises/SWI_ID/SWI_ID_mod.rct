@@ -1,0 +1,95 @@
+         0       100         2         0
+         00.0000e+00(10E12.4)                   -1     Decay Layer   1
+         00.0000e+00(10E12.4)                   -1     Decay Layer   2
+         00.0000e+00(10E12.4)                   -1     Decay Layer   3
+         00.0000e+00(10E12.4)                   -1     Decay Layer   4
+         00.0000e+00(10E12.4)                   -1     Decay Layer   5
+         00.0000e+00(10E12.4)                   -1     Decay Layer   6
+         00.0000e+00(10E12.4)                   -1     Decay Layer   7
+         00.0000e+00(10E12.4)                   -1     Decay Layer   8
+         00.0000e+00(10E12.4)                   -1     Decay Layer   9
+         00.0000e+00(10E12.4)                   -1     Decay Layer  10
+         00.0000e+00(10E12.4)                   -1     Decay Layer  11
+         00.0000e+00(10E12.4)                   -1     Decay Layer  12
+         00.0000e+00(10E12.4)                   -1     Decay Layer  13
+         00.0000e+00(10E12.4)                   -1     Decay Layer  14
+         00.0000e+00(10E12.4)                   -1     Decay Layer  15
+         00.0000e+00(10E12.4)                   -1     Decay Layer  16
+         00.0000e+00(10E12.4)                   -1     Decay Layer  17
+         00.0000e+00(10E12.4)                   -1     Decay Layer  18
+         00.0000e+00(10E12.4)                   -1     Decay Layer  19
+         00.0000e+00(10E12.4)                   -1     Decay Layer  20
+         00.0000e+00(10E12.4)                   -1     Decay Layer  21
+         00.0000e+00(10E12.4)                   -1     Decay Layer  22
+         00.0000e+00(10E12.4)                   -1     Decay Layer  23
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         0-1.000e+00(10E12.4)                   -1     1st Order Constant for Component 2
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   1
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   2
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   3
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   4
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   5
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   6
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   7
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   8
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer   9
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  10
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  11
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  12
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  13
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  14
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  15
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  16
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  17
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  18
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  19
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  20
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  21
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  22
+         00.0000e+00(10E12.4)                   -1     Decay on Soil Layer  23
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+         00.0000e+00(10E12.4)                   -1     Rate Const on Sorbed Phase for Component 2
+       100     1.000(10E12.4)                   -1     STOICH
+  1.0000e+00

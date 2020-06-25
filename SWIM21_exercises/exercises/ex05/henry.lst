@@ -1,0 +1,2357 @@
+                                  SEAWAT Version 4
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                           VERSION 4.00.01 04/29/2008
+
+
+ This model run produced both GLOBAL and LIST files.  This is the LIST file.
+
+  ----- 
+ | M T | Conversion from Groundwater Vistas                                              
+ | 3 D | MT3D Model                                                                      
+  ----- 
+ THE TRANSPORT MODEL CONSISTS OF    10 LAYER(S)    1 ROW(S)   21 COLUMN(S)
+ NUMBER OF STRESS PERIOD(S) FOR TRANSPORT SIMULATION =    1
+ NUMBER OF ALL COMPONENTS INCLUDED IN SIMULATION =    1
+ NUMBER OF MOBILE COMPONENTS INCLUDED IN SIMULATION =    1
+ UNIT FOR TIME IS DAY ;  UNIT FOR LENGTH IS M   ;  UNIT FOR MASS IS KG  
+ OPTIONAL PACKAGES INCLUDED IN CURRENT SIMULATION:
+  o ADV   ON UNIT282
+  o DSP   ON UNIT283
+  o SSM   ON UNIT284
+  o RCT   ON UNIT285
+  o GCG   ON UNIT286
+
+
+ VDF -- VARIABLE DENSITY FLOW, VERSION 1, 2/13/2004
+         INPUT READ FROM UNIT280
+
+ COUPLING BETWEEN FLOW AND TRANSPORT IS EXPLICIT
+ VARIABLE-DENSITY WATER-TABLE CORRECTIONS NOT ADDED
+ MT3DMS SPECIES USED IN EQUATION OF STATE FOR FLUID DENSITY:          1
+ AN UPSTREAM-WEIGHTED ALGORITHM IS USED TO CALCULATE FLUID DENSITY TERMS THAT CONSERVE MASS
+  1000.     REFERENCE DENSITY
+ 0.7140     DENSITY SLOPE FOR EQUATION OF STATE
+ DENSITY EQUATION OF STATE
+ RHO =     1000.00    
+  + 0.7140     * ( CONC(   1) -  0.000     )
+
+
+
+ FIRSTDT SPECIFIED BY USER IN THE VDF FILE IS:   0.1000000E-01
+ BTN5 -- BASIC TRANSPORT PACKAGE, VERSION 5, OCTOBER 2006, INPUT READ FROM UNIT281
+       3215 ELEMENTS OF THE  X ARRAY USED BY THE BTN PACKAGE
+        220 ELEMENTS OF THE IX ARRAY USED BY THE BTN PACKAGE
+
+ FLOW MODEL IS TRANSIENT
+
+ ADV5 -- ADVECTION PACKAGE, VERSION 5, FEBRUARY 2005, INPUT READ FROM UNIT282
+ ADVECTION IS SOLVED WITH THE UPSTREAM FINITE DIFFERENCE SCHEME
+ COURANT NUMBER ALLOWED IN SOLVING THE ADVECTION TERM =  1.00    
+          0 ELEMENTS OF THE  X ARRAY USED BY THE ADV PACKAGE
+          0 ELEMENTS OF THE IX ARRAY USED BY THE ADV PACKAGE
+
+ DSP5 -- DISPERSION PACKAGE, VERSION 5, OCTOBER 2006, INPUT READ FROM UNIT283
+       2330 ELEMENTS OF THE  X ARRAY USED BY THE DSP PACKAGE
+          0 ELEMENTS OF THE IX ARRAY USED BY THE DSP PACKAGE
+
+ SSM5 -- SINK & SOURCE MIXING PACKAGE, VERSION 5, OCTOBER 2006, INPUT READ FROM UNIT284
+ HEADER LINE OF THE SSM PACKAGE INPUT FILE:
+  T F F F F F                                                                                                                                                                                            
+ MAJOR STRESS COMPONENTS PRESENT IN THE FLOW MODEL:
+  o WELL
+ MAXIMUM NUMBER OF POINT SINKS/SOURCES =      20
+        260 ELEMENTS OF THE  X ARRAY USED BY THE SSM PACKAGE
+          0 ELEMENTS OF THE IX ARRAY BY THE SSM PACKAGE
+
+ RCT5 -- CHEMICAL REACTION PACKAGE, VERSION 5, FEBRUARY 2005, INPUT READ FROM UNIT285
+ TYPE OF SORPTION SELECTED IS [LINEAR]
+ NO FIRST-ORDER RATE REACTION IS SIMULATED
+ REACTION COEFFICIENTS ASSIGNED CELL-BY-CELL
+ INITIAL SORBED/IMMOBILE PHASE CONCENTRATION ASSIGNED BY DEFAULT
+        630 ELEMENTS OF THE  X ARRAY USED BY THE RCT PACKAGE
+          0 ELEMENTS OF THE IX ARRAY USED BY THE RCT PACKAGE
+
+ GCG5 -- GENERALIZED CONJUGATE GRADIENT SOLVER PACKAGE, VERSION 5, FEBRUARY 2005 INPUT READ FROM UNIT286
+ MAXIMUM OF    1 OUTER ITERATIONS
+        AND   50 INNER ITERATIONS ALLOWED FOR CLOSURE
+ THE PRECONDITIONING TYPE SELECTED IS SSOR.
+ FULL DISPERSION TENSOR INCLUDED IN IMPLICIT SOLUTION
+       5720 ELEMENTS OF THE  X ARRAY USED BY THE GCG PACKAGE
+        150 ELEMENTS OF THE IX ARRAY USED BY THE GCG PACKAGE
+
+ 
+ # MODFLOW2000 Basic Package                                                     
+ #MODFLOW Data Set Created by Groundwater Vistas                                 
+ #
+   10 LAYERS         1 ROWS        21 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+
+ BAS6 -- BASIC PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT    1
+         50 ELEMENTS IN IR ARRAY ARE USED BY BAS
+
+ WEL6 -- WELL PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT   12
+ # MODFLOW2000 Well Package
+     0 Named Parameters         0 List entries
+ MAXIMUM OF     10 ACTIVE WELLS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   54
+         40 ELEMENTS IN RX ARRAY ARE USED BY WEL
+
+ CHD6 -- TIME-VARIANT SPECIFIED-HEAD PACKAGE, VERSION 6, 1/11/2000
+ INPUT READ FROM UNIT   20
+ # MODFLOW2000 Constant-Head Boundary Package (CHD)
+ No named parameters
+ MAXIMUM OF     10 TIME-VARIANT SPECIFIED-HEAD CELLS AT ONE TIME
+         50 ELEMENTS IN RX ARRAY ARE USED BY CHD
+
+         90  ELEMENTS OF RX ARRAY USED OUT OF         90
+          0  ELEMENTS OF RZ ARRAY USED OUT OF          1
+         50  ELEMENTS OF IR ARRAY USED OUT OF         50
+1
+ # MODFLOW2000 Basic Package                                                     
+ #MODFLOW Data Set Created by Groundwater Vistas                                 
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   1
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   2
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   3
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   4
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   5
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   6
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   7
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   8
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   9
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER  10
+ READING ON UNIT    1 WITH FORMAT: (25I3)              
+
+ AQUIFER HEAD WILL BE SET TO  999.00     AT ALL NO-FLOW NODES (IBOUND=0).
+
+             INITIAL HEAD =   1.00000     FOR LAYER   1
+
+             INITIAL HEAD =   1.00000     FOR LAYER   2
+
+             INITIAL HEAD =   1.00000     FOR LAYER   3
+
+             INITIAL HEAD =   1.00000     FOR LAYER   4
+
+             INITIAL HEAD =   1.00000     FOR LAYER   5
+
+             INITIAL HEAD =   1.00000     FOR LAYER   6
+
+             INITIAL HEAD =   1.00000     FOR LAYER   7
+
+             INITIAL HEAD =   1.00000     FOR LAYER   8
+
+             INITIAL HEAD =   1.00000     FOR LAYER   9
+
+             INITIAL HEAD =   1.00000     FOR LAYER  10
+
+ OUTPUT CONTROL IS SPECIFIED EVERY TIME STEP
+ HEAD PRINT FORMAT CODE IS   0    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT   30    DRAWDOWNS WILL BE SAVED ON UNIT   31
+ LAYER NUMBER  AQUIFER TYPE
+ ------------  ------------
+       1            0
+       2            0
+       3            0
+       4            0
+       5            0
+       6            0
+       7            0
+       8            0
+       9            0
+      10            0
+
+                           WIDTH ALONG ROWS (DELR)  READ ON UNIT281 USING FORMAT: "(10E12.4)           "
+                           -----------------------------------------------------------------------------
+                                       WIDTH ALONG COLS (DELC)  =   1.000000    
+                                       TOP ELEV. OF 1ST LAYER   =   1.000000    
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  1
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  2
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  3
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  4
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  5
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  6
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  7
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  8
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER  9
+                                       CELL THICKNESS (DZ)      =  0.1000000     FOR LAYER 10
+                                       POROSITY                 =  0.3500000     FOR LAYER  1
+                                       POROSITY                 =  0.3500000     FOR LAYER  2
+                                       POROSITY                 =  0.3500000     FOR LAYER  3
+                                       POROSITY                 =  0.3500000     FOR LAYER  4
+                                       POROSITY                 =  0.3500000     FOR LAYER  5
+                                       POROSITY                 =  0.3500000     FOR LAYER  6
+                                       POROSITY                 =  0.3500000     FOR LAYER  7
+                                       POROSITY                 =  0.3500000     FOR LAYER  8
+                                       POROSITY                 =  0.3500000     FOR LAYER  9
+                                       POROSITY                 =  0.3500000     FOR LAYER 10
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  1
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  2
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  3
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  4
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  5
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  6
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  7
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  8
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER  9
+                                       CONCN. BOUNDARY ARRAY    =              1 FOR LAYER 10
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  1
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  2
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  3
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  4
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  5
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  6
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  7
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  8
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER  9
+                                       INITIAL CONC.: COMP.  01 =   35.00000     FOR LAYER 10
+
+ VALUE INDICATING INACTIVE CONCENTRATION CELLS =   -1.000000    
+ MINIMUM SATURATED THICKNESS [THKMIN] ALLOWED =  0.0500 OF TOTAL CELL THICKNESS
+
+
+ OUTPUT CONTROL OPTIONS
+ ----------------------
+
+ DO NOT PRINT CELL CONCENTRATION
+ DO NOT PRINT PARTICLE NUMBER IN EACH CELL
+ DO NOT PRINT RETARDATION FACTOR
+ DO NOT PRINT DISPERSION COEFFICIENT
+ SAVE DISSOLVED PHASE CONCENTRATIONS IN UNFORMATTED FILES [MT3Dnnn.UCN]
+  FOR EACH SPECIES ON UNITS 201 AND ABOVE
+ SAVE SORBED/IMMOBILE PHASE CONCENTRATIONS IN UNFORMATTED FILES [MT3DnnnS.UCN]
+  FOR EACH SPECIES ON UNITS 301 AND ABOVE, IF SORPTION/MASS TRANSFER SIMULATED
+
+ SIMULATION RESULTS ARE SAVED EVERY   1 TRANSPORT STEP(S)
+
+ NUMBER OF OBSERVATION POINTS =    0
+
+ SAVE ONE-LINE SUMMARY OF MASS BUDGETS IN FILES [MT3Dnnn.MAS]
+  FOR EACH SPECIES ON UNITS 601 AND ABOVE, EVERY 10 TRANSPORT STEPS
+
+ MAXIMUM LENGTH ALONG THE X (J) AXIS =   2.010000    
+ MAXIMUM LENGTH ALONG THE Y (I) AXIS =   1.000000    
+ MAXIMUM LENGTH ALONG THE Z (K) AXIS =   1.000000    
+
+
+ ADVECTION SOLUTION OPTIONS
+ --------------------------
+
+ ADVECTION IS SOLVED WITH THE UPSTREAM FINITE DIFFERENCE SCHEME
+ COURANT NUMBER ALLOWED IN SOLVING THE ADVECTION TERM =  1.00    
+
+
+ DISPERSION INPUT PARAMETERS
+ ---------------------------
+
+ DISPERSION PACKAGE INPUT KEYWORDS: MULTIDIFFUSION
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  1
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  2
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  3
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  4
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  5
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  6
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  7
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  8
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER  9
+                                       LONG. DISPERSIVITY (AL)  =   0.000000     FOR LAYER 10
+
+                           H. TRANS./LONG. DISP.    READ ON UNIT283 USING FORMAT: "(10E12.4)           "
+                           -----------------------------------------------------------------------------
+
+                           V. TRANS./LONG. DISP.    READ ON UNIT283 USING FORMAT: "(10E12.4)           "
+                           -----------------------------------------------------------------------------
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  1
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  2
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  3
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  4
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  5
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  6
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  7
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  8
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER  9
+                                       DIFFUSION COEFF. COMP 01 =   1.629000     FOR LAYER 10
+
+
+ SORPTION AND 1ST/0TH ORDER REACTION PARAMETERS
+ ----------------------------------------------
+
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  1
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  2
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  3
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  4
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  5
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  6
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  7
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  8
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER  9
+                                       BULK DENSITY (RHOB)      =   157.0000     FOR LAYER 10
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  1
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  2
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  3
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  4
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  5
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  6
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  7
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  8
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  9
+                                       1ST SORP. COEF. COMP. 01 =   0.000000     FOR LAYER 10
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  1
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  2
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  3
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  4
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  5
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  6
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  7
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  8
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER  9
+                                       2ND SORP. COEF. COMP. 01 =   0.000000     FOR LAYER 10
+
+
+
+                                               SOLUTION BY THE GENERALIZED CONJUGATE GRADIENT METHOD
+                                               -----------------------------------------------------
+                                     MAXIMUM OUTER ITERATIONS ALLOWED FOR CLOSURE =        1
+                                     MAXIMUM INNER ITERATIONS ALLOWED FOR CLOSURE =       50
+                                                    PRECONDITIONING TYPE SELECTED =    2
+                                                           ACCELERATION PARAMETER =     1.0000    
+                                       CONCENTRATION CHANGE CRITERION FOR CLOSURE =    0.10000E-05
+                                       GCG CONCENTRATION CHANGE PRINTOUT INTERVAL =        5
+
+
+                                   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                       STRESS PERIOD NO.  001
+                                   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ LENGTH OF CURRENT STRESS PERIOD =   2.000000    
+ NUMBER OF TIME STEPS FOR CURRENT STRESS PERIOD =    1
+ TIME STEP MULTIPLIER USED IN FLOW SOLUTION =   1.000000    
+ USER-SPECIFIED TRANSPORT STEPSIZE =  0.1000000E-03DAY 
+ MAXIMUM NUMBER OF TRANSPORT STEPS ALLOWED  IN ONE FLOW TIME STEP =     99999
+ MULTIPLIER FOR SUCCESSIVE TRANSPORT STEPS  [USED IN IMPLICIT SCHEMES] =     1.500
+ MAXIMUM TRANSPORT STEP SIZE  [USED IN IMPLICIT SCHEMES] =   0.000000    DAY 
+1
+                            STRESS PERIOD NO.    1, LENGTH =   2.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   2.000000    
+
+       NO    LAYER   ROW   COLUMN   CONCENTRATION       TYPE            COMPONENT
+       1       1       1      21       35.00000         CONSTANT HEAD       1
+       2       2       1      21       35.00000         CONSTANT HEAD       1
+       3       3       1      21       35.00000         CONSTANT HEAD       1
+       4       4       1      21       35.00000         CONSTANT HEAD       1
+       5       5       1      21       35.00000         CONSTANT HEAD       1
+       6       6       1      21       35.00000         CONSTANT HEAD       1
+       7       7       1      21       35.00000         CONSTANT HEAD       1
+       8       8       1      21       35.00000         CONSTANT HEAD       1
+       9       9       1      21       35.00000         CONSTANT HEAD       1
+      10      10       1      21       35.00000         CONSTANT HEAD       1
+
+ WELL NO.  LAYER   ROW   COL   STRESS RATE         
+ --------------------------------------------------
+      1      1      1      1      0.5702    
+      2      2      1      1      0.5702    
+      3      3      1      1      0.5702    
+      4      4      1      1      0.5702    
+      5      5      1      1      0.5702    
+      6      6      1      1      0.5702    
+      7      7      1      1      0.5702    
+      8      8      1      1      0.5702    
+      9      9      1      1      0.5702    
+     10     10      1      1      0.5702    
+
+     10 WELLS
+
+ CHD NO.   LAYER   ROW   COL    START HEAD        END HEAD         
+ ------------------------------------------------------------------
+      1      1      1     21       1.000           1.000    
+      2      2      1     21       1.000           1.000    
+      3      3      1     21       1.000           1.000    
+      4      4      1     21       1.000           1.000    
+      5      5      1     21       1.000           1.000    
+      6      6      1     21       1.000           1.000    
+      7      7      1     21       1.000           1.000    
+      8      8      1     21       1.000           1.000    
+      9      9      1     21       1.000           1.000    
+     10     10      1     21       1.000           1.000    
+
+
+     10 TIME-VARIANT SPECIFIED-HEAD CELLS
+
+
+                                          ================================================
+                                                         FROM TIME =   0.0000     TO    2.0000    
+
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    13 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  0.6721E-02  0  0.3922E-02  0  0.3371E-02  0  0.9589E-03  0 -0.2483E-03
+   ( 10,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  4,  1, 18)
+  0  0.9035E-04  0 -0.7370E-04  0  0.2326E-04  0 -0.1584E-04  0 -0.5431E-05
+   (  1,  1,  5)  (  7,  1, 10)  (  2,  1,  3)  (  7,  1, 14)  ( 10,  1,  1)
+  0 -0.2830E-05  0 -0.8196E-06  1 -0.3180E-06
+   (  9,  1, 12)  (  3,  1, 18)  (  3,  1,  7)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -530.3      0   451.2      0  -424.1      0  -297.7      0  -174.9    
+   (  1,  1,  1)  ( 10,  1, 19)  (  1,  1, 17)  (  1,  1, 19)  (  1,  1, 20)
+  0  -79.01      0   55.04      0   32.23      0   15.54      0  -5.333    
+   (  1,  1, 20)  (  2,  1, 20)  (  2,  1, 20)  (  2,  1, 20)  (  2,  1, 19)
+  0  -2.000      0  0.7297      1  0.4009    
+   (  9,  1, 20)  (  3,  1, 19)  (  3,  1, 19)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1261E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6305E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+
+
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   1 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     3 TOTAL ITERATIONS
+
+ HEAD/DRAWDOWN PRINTOUT FLAG = 1     TOTAL BUDGET PRINTOUT FLAG = 1
+ CELL-BY-CELL FLOW TERM FLAG = 1
+
+ OUTPUT FLAGS FOR ALL LAYERS ARE THE SAME:
+   HEAD    DRAWDOWN  HEAD  DRAWDOWN
+ PRINTOUT  PRINTOUT  SAVE    SAVE
+ ----------------------------------
+     0         0       1       1
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    1
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.1000000E-03DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    1, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.1942306E-01
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.1948254E-01              -0.1434793E-04
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.1948254E-01 KG           -0.1948254E-01 KG  
+
+                                                          NET (IN - OUT):  -0.9389711E-12
+                                                   DISCREPANCY (PERCENT):  -0.4819551E-08
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  0.1558E-03  0  0.1363E-03  0  0.7986E-04  0  0.2862E-04  0 -0.9412E-05
+   (  8,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  ( 10,  1, 13)
+  0 -0.4613E-05  0 -0.1921E-05  0 -0.1138E-05  0 -0.4541E-06  1 -0.2051E-06
+   (  4,  1, 18)  (  6,  1, 14)  ( 10,  1,  2)  (  8,  1, 13)  ( 10,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -44.45      0  -26.37      0  -11.86      0  -8.576      0  -6.584    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1, 17)  (  1,  1, 19)  (  1,  1, 20)
+  0  -3.675      0   1.534      0   1.045      0  0.4391      1  0.2625    
+   (  1,  1, 20)  (  2,  1, 20)  (  2,  1, 20)  (  2,  1, 20)  (  2,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1228E-02(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6140E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   2 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     3 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    2
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.2500000E-03DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    2, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.4933999E-01
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.4940857E-01              -0.2225367E-04
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.4940857E-01 KG           -0.4940857E-01 KG  
+
+                                                          NET (IN - OUT):  -0.2735376E-10
+                                                   DISCREPANCY (PERCENT):  -0.5536238E-07
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+     9 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.6538E-04  0  0.3986E-04  0 -0.2265E-04  0  0.2642E-04  0 -0.6755E-05
+   ( 10,  1,  1)  (  1,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  9,  1,  3)
+  0  0.3908E-05  0 -0.1260E-05  0  0.7147E-06  1 -0.2112E-06
+   (  1,  1,  1)  (  9,  1,  2)  (  1,  1,  1)  (  4,  1,  6)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -43.36      0  -31.16      0  -17.67      0   11.09      0   7.251    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  2)  (  9,  1,  2)
+  0   3.163      0  -1.126      0 -0.5709      1 -0.3248    
+   (  9,  1,  2)  (  9,  1,  3)  (  9,  1,  3)  (  9,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1227E-02(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6137E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   3 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     3 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    3
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.4750000E-03DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    3, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.9424293E-01
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.9431970E-01              -0.3041481E-04
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.9431971E-01 KG           -0.9431971E-01 KG  
+
+                                                          NET (IN - OUT):  -0.4675538E-09
+                                                   DISCREPANCY (PERCENT):  -0.4957117E-06
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+     9 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.1013E-03  0  0.5602E-04  0 -0.3359E-04  0  0.3771E-04  0 -0.9632E-05
+   ( 10,  1,  1)  (  1,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  8,  1,  3)
+  0  0.5742E-05  0 -0.1778E-05  0  0.1046E-05  1 -0.3066E-06
+   (  1,  1,  1)  (  9,  1,  2)  (  1,  1,  1)  (  4,  1,  6)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -61.26      0  -45.58      0  -25.89      0   15.55      0   10.42    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  2)  (  9,  1,  2)
+  0   4.545      0  -1.507      0 -0.8062      1 -0.4514    
+   (  9,  1,  2)  (  9,  1,  3)  (  9,  1,  3)  (  9,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1227E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6135E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   4 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     4 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    4
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.8125000E-03DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    4, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.1615979    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.1616909                  -0.4668624E-04
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.1616910     KG           -0.1616910     KG  
+
+                                                          NET (IN - OUT):  -0.4974112E-09
+                                                   DISCREPANCY (PERCENT):  -0.3076307E-06
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.1474E-03  0  0.8099E-04  0 -0.4884E-04  0  0.5585E-04  0 -0.1408E-04
+   ( 10,  1,  1)  (  1,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  8,  1,  3)
+  0  0.8105E-05  0 -0.2499E-05  0  0.1482E-05  0 -0.4136E-06  1  0.2013E-06
+   (  1,  1,  1)  (  9,  1,  2)  ( 10,  1,  1)  (  5,  1,  7)  (  2,  1,  5)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -84.03      0  -63.06      0  -35.80      0   21.26      0   14.37    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  2)  (  9,  1,  2)
+  0   6.296      0  -2.055      0  -1.091      0  0.5016      1  0.2600    
+   (  9,  1,  2)  (  8,  1,  2)  (  9,  1,  3)  (  8,  1,  3)  (  8,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1227E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6133E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   5 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     4 TOTAL ITERATIONS
+  MAXIMUM CONCENTRATION CHANGES FOR EACH ITERATION:
+  MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL
+ ------------------------------------------------------------------------------------------------------------------------------------
+   0.5791E-01 (  1,  1,  1)  0.7257E-03 (  2,  1,  2)  0.7138E-05 (  2,  1,  3)  0.6280E-07 (  2,  1,  4)
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    5
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.1318750E-02DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    5, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.2626306    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.2627371                  -0.6018154E-04
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.2627372     KG           -0.2627372     KG  
+
+                                                          NET (IN - OUT):  -0.1286728E-08
+                                                   DISCREPANCY (PERCENT):  -0.4897397E-06
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.2122E-03  0  0.1160E-03  0 -0.7003E-04  0  0.8221E-04  0 -0.2046E-04
+   ( 10,  1,  1)  (  1,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  9,  1,  4)
+  0  0.1110E-04  0 -0.3418E-05  0  0.2094E-05  0 -0.5794E-06  1  0.2910E-06
+   (  1,  1,  1)  (  9,  1,  2)  ( 10,  1,  1)  (  5,  1,  7)  (  1,  1,  5)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -111.4      0  -84.35      0  -47.69      0   28.08      0   19.22    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  2)  (  9,  1,  2)
+  0   8.440      0  -2.830      0  -1.427      0  0.6462      1  0.3284    
+   (  9,  1,  2)  (  8,  1,  2)  (  9,  1,  3)  (  8,  1,  3)  (  8,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1226E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6130E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   6 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     4 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    6
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.2078125E-02DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    6, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.4141797    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.4143094                  -0.8335254E-04
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.4143096     KG           -0.4143096     KG  
+
+                                                          NET (IN - OUT):  -0.1895376E-07
+                                                   DISCREPANCY (PERCENT):  -0.4574781E-05
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.3016E-03  0  0.1649E-03  0 -0.9816E-04  0  0.1197E-03  0 -0.2944E-04
+   ( 10,  1,  1)  (  1,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  9,  1,  4)
+  0  0.1462E-04  0 -0.4556E-05  0  0.2838E-05  0 -0.7827E-06  1  0.4197E-06
+   (  1,  1,  1)  (  9,  1,  2)  ( 10,  1,  1)  (  5,  1,  7)  (  1,  1,  5)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -142.1      0  -108.5      0  -60.68      0   35.51      0   24.62    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  2)  (  9,  1,  2)
+  0   10.82      0  -3.714      0  -1.862      0  0.7857      1  0.3886    
+   (  9,  1,  2)  (  8,  1,  2)  (  8,  1,  2)  (  8,  1,  3)  (  8,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1225E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6125E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   7 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     5 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    7
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.3217188E-02DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    7, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.6415040    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.6416715                  -0.1212490E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.6416718     KG           -0.6416719     KG  
+
+                                                          NET (IN - OUT):  -0.3000296E-07
+                                                   DISCREPANCY (PERCENT):  -0.4675749E-05
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.4228E-03  0  0.2325E-03  0 -0.1331E-03  0  0.1713E-03  0 -0.4132E-04
+   ( 10,  1,  1)  (  1,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  9,  1,  4)
+  0  0.1881E-04  0 -0.5998E-05  0  0.3592E-05  0 -0.1002E-05  1  0.5847E-06
+   (  2,  1,  1)  (  3,  1, 11)  ( 10,  1,  1)  (  5,  1,  7)  (  1,  1,  5)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -173.3      0  -133.3      0  -72.87      0   42.68      0   30.02    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  2)  (  9,  1,  2)
+  0   13.15      0  -4.595      0  -2.282      0  0.8944      1  0.4279    
+   (  9,  1,  2)  (  8,  1,  2)  (  8,  1,  2)  (  8,  1,  3)  (  8,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1224E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6118E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   8 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     6 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    8
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.4925781E-02DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    8, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                  -0.9824918    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):   0.9827113                  -0.1732355E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:   0.9827118     KG           -0.9827118     KG  
+
+                                                          NET (IN - OUT):  -0.4801473E-07
+                                                   DISCREPANCY (PERCENT):  -0.4885942E-05
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.5844E-03  0  0.3251E-03  0 -0.1705E-03  0  0.2379E-03  0 -0.5584E-04
+   ( 10,  1,  1)  (  1,  1,  1)  ( 10,  1,  1)  (  1,  1,  1)  (  9,  1,  4)
+  0  0.2546E-04  0 -0.7800E-05  0  0.4080E-05  0 -0.1184E-05  1  0.7613E-06
+   (  3,  1,  1)  (  3,  1, 11)  ( 10,  1,  1)  (  5,  1,  7)  (  1,  1,  5)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -201.4      0  -155.5      0  -81.55      0   50.79      0   34.67    
+   (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  3)  (  9,  1,  2)
+  0   14.95      0  -5.253      0  -2.565      0  0.9262      1 -0.4567    
+   (  9,  1,  2)  (  8,  1,  2)  (  8,  1,  2)  (  8,  1,  3)  (  9,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1221E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6105E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP   9 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     7 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.    9
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.7488672E-02DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP    9, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                   -1.493977    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    1.494247                  -0.2227939E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    1.494248     KG            -1.494247     KG  
+
+                                                          NET (IN - OUT):   0.1251505E-05
+                                                   DISCREPANCY (PERCENT):   0.8375488E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.7970E-03  0  0.4504E-03  0 -0.2113E-03  0  0.3135E-03  0 -0.7165E-04
+   ( 10,  1,  1)  (  1,  1,  1)  (  7,  1,  9)  (  1,  1,  1)  (  9,  1,  4)
+  0  0.3389E-04  0 -0.9981E-05  0  0.4311E-05  0 -0.1277E-05  1  0.8413E-06
+   (  3,  1,  1)  (  6,  1,  5)  (  2,  1,  1)  (  5,  1,  7)  (  1,  1,  5)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -221.6      0  -170.5      0  -97.84      0   58.60      0   37.77    
+   (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  1)  (  9,  1,  3)  (  9,  1,  2)
+  0   15.62      0  -5.452      0  -2.549      0 -0.8412      1 -0.4916    
+   (  9,  1,  2)  (  8,  1,  2)  (  8,  1,  2)  (  9,  1,  3)  (  9,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1217E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6083E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  10 IN FLOW TIME STEP   1 STRESS PERIOD   1
+     8 TOTAL ITERATIONS
+  MAXIMUM CONCENTRATION CHANGES FOR EACH ITERATION:
+  MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL
+ ------------------------------------------------------------------------------------------------------------------------------------
+   0.1519     (  1,  1,  2)  0.2518E-01 (  1,  1,  1)  0.5962E-02 (  1,  1,  1)  0.1136E-02 (  2,  1,  7)  0.1526E-03 (  2,  1,  6)
+   0.1347E-04 (  1,  1,  4)  0.2406E-05 (  1,  1,  4)  0.1023E-07 (  2,  1, 14)
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   10
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.1133301E-01DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   10, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                   -2.261207    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    2.261502                  -0.2514058E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    2.261503     KG            -2.261506     KG  
+
+                                                          NET (IN - OUT):  -0.3393010E-05
+                                                   DISCREPANCY (PERCENT):  -0.1500333E-03
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    10 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.1076E-02  0  0.6174E-03  0  0.3194E-03  0  0.3811E-03  0 -0.8593E-04
+   ( 10,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  4)
+  0  0.4548E-04  0 -0.1371E-04  0  0.4581E-05  0 -0.1370E-05  1  0.6666E-06
+   (  3,  1,  1)  ( 10,  1,  7)  (  2,  1,  4)  (  5,  1,  7)  (  2,  1,  6)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -228.0      0  -172.0      0  -114.1      0  -63.24      0   38.63    
+   (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  1)  (  2,  1,  1)  (  9,  1,  2)
+  0   14.51      0  -5.117      0  -2.100      0 -0.8713      1 -0.5125    
+   (  9,  1,  2)  (  8,  1,  2)  (  9,  1,  5)  (  9,  1,  3)  (  9,  1,  3)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1208E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.6040E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  11 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    10 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   11
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.1709951E-01DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   11, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                   -3.411867    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    3.412161                  -0.2514058E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    3.412162     KG            -3.412166     KG  
+
+                                                          NET (IN - OUT):  -0.3499113E-05
+                                                   DISCREPANCY (PERCENT):  -0.1025482E-03
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    11 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.1443E-02  0  0.8412E-03  0  0.4617E-03  0  0.4251E-03  0 -0.9330E-04
+   ( 10,  1,  1)  (  1,  1,  2)  (  1,  1,  1)  (  1,  1,  1)  (  9,  1,  5)
+  0  0.6194E-04  0 -0.1810E-04  0  0.6736E-05  0 -0.1864E-05  0  0.6406E-06
+   (  3,  1,  1)  ( 10,  1,  8)  (  6,  1,  1)  ( 10,  1,  5)  (  1,  1,  2)
+  1 -0.5178E-06
+   (  8,  1,  2)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -246.7      0  -172.3      0  -124.8      0  -61.11      0   36.83    
+   (  1,  1,  4)  (  1,  1,  5)  (  9,  1,  1)  (  2,  1,  1)  (  9,  1,  2)
+  0  -12.53      0   4.725      0  -2.687      0  -1.452      0 -0.6260    
+   (  2,  1,  5)  ( 10,  1,  6)  (  1,  1,  2)  (  1,  1,  2)  (  1,  1,  2)
+  1 -0.3232    
+   (  1,  1,  2)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1187E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.5933E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  12 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    11 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   12
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.2574927E-01DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   12, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                   -5.133419    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    5.133712                  -0.2514058E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    5.133715     KG            -5.133718     KG  
+
+                                                          NET (IN - OUT):  -0.3822554E-05
+                                                   DISCREPANCY (PERCENT):  -0.7445978E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    11 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.1925E-02  0  0.1088E-02  0  0.5865E-03  0  0.4619E-03  0 -0.1285E-03
+   ( 10,  1,  1)  (  1,  1,  2)  (  6,  1,  1)  (  1,  1,  3)  ( 10,  1, 14)
+  0  0.8391E-04  0 -0.2217E-04  0  0.1031E-04  0 -0.2531E-05  0  0.1103E-05
+   (  3,  1,  1)  ( 10,  1,  8)  (  6,  1,  1)  ( 10,  1,  5)  (  1,  1,  2)
+  1 -0.9635E-06
+   (  9,  1,  6)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -284.5      0  -176.9      0  -124.4      0   55.93      0   33.63    
+   (  1,  1,  6)  (  7,  1,  1)  (  9,  1,  1)  (  1,  1,  5)  (  9,  1,  2)
+  0  -15.59      0  -8.112      0  -4.607      0  -1.681      0 -0.4762    
+   (  5,  1,  1)  (  1,  1,  2)  (  1,  1,  2)  (  1,  1,  2)  (  5,  1,  2)
+  1 -0.2842    
+   (  4,  1,  2)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.1125E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.5624E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  13 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    13 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   13
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.3872390E-01DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   13, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                   -7.663354    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    7.663649                  -0.2514058E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    7.663652     KG            -7.663654     KG  
+
+                                                          NET (IN - OUT):  -0.2037209E-05
+                                                   DISCREPANCY (PERCENT):  -0.2658274E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    11 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.2561E-02  0  0.1016E-02  0  0.1052E-02  0  0.5600E-03  0 -0.1494E-03
+   ( 10,  1,  1)  (  1,  1,  1)  (  8,  1,  1)  (  2,  1,  4)  ( 10,  1, 14)
+  0  0.1431E-03  0  0.4014E-04  0  0.1446E-04  0  0.4945E-05  0  0.1334E-05
+   (  3,  1,  1)  (  6,  1,  1)  (  7,  1,  6)  (  8,  1,  1)  ( 10,  1, 19)
+  1 -0.1100E-05
+   (  9,  1,  5)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1   411.7      0  -207.9      0  -109.2      0  -131.3      0  -82.37    
+   (  9,  1, 20)  (  7,  1,  1)  (  9,  1, 20)  (  9,  1, 20)  (  7,  1, 20)
+  0  -47.49      0  -17.67      0  -8.149      0  -2.414      0 -0.9871    
+   (  6,  1, 20)  (  4,  1, 20)  (  3,  1, 20)  (  2,  1, 20)  (  1,  1, 20)
+  1 -0.6507    
+   (  1,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.9788E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.4894E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  14 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    16 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   14
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.5818585E-01DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   14, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                   -11.12179    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    11.12209                  -0.2514058E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    11.12209     KG            -11.12209     KG  
+
+                                                          NET (IN - OUT):  -0.2200996E-05
+                                                   DISCREPANCY (PERCENT):  -0.1978940E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    13 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.3591E-02  0 -0.1372E-02  0  0.1129E-02  0  0.6227E-03  0  0.4398E-03
+   ( 10,  1,  1)  (  7,  1, 15)  (  8,  1,  1)  ( 10,  1,  1)  (  2,  1,  4)
+  0  0.2971E-03  0  0.1156E-03  0  0.2710E-04  0  0.1113E-04  0 -0.3483E-05
+   (  5,  1,  1)  (  1,  1,  1)  (  8,  1,  1)  (  8,  1,  6)  (  4,  1, 15)
+  0  0.1355E-05  0 -0.6474E-06  1 -0.4713E-06
+   ( 10,  1, 19)  (  9,  1, 11)  ( 10,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1   1590.      0   560.7      0   143.5      0  -173.3      0  -148.8    
+   (  9,  1, 20)  (  7,  1, 20)  (  2,  1, 20)  (  9,  1, 20)  (  9,  1, 20)
+  0  -84.30      0  -38.20      0  -16.93      0   9.516      0  -3.686    
+   (  4,  1, 20)  (  2,  1, 20)  (  2,  1, 20)  (  2,  1, 19)  (  1,  1, 20)
+  0  -1.255      0  0.3900      1  0.2842    
+   (  1,  1, 20)  (  2,  1, 20)  (  2,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.7813E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.3906E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.6138E-02(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=   1
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  15 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    17 TOTAL ITERATIONS
+  MAXIMUM CONCENTRATION CHANGES FOR EACH ITERATION:
+  MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL
+ ------------------------------------------------------------------------------------------------------------------------------------
+   0.3211     (  1,  1, 14)  0.1621E-01 (  1,  1, 21)  0.1749     (  1,  1, 21)  0.1951E-01 ( 10,  1,  4)  0.5367E-01 (  9,  1, 21)
+   0.5352E-01 (  9,  1, 21)  0.1901E-01 (  7,  1,  7)  0.7588E-02 (  9,  1, 21)  0.5332E-02 (  9,  1, 21)  0.2021E-02 (  9,  1, 21)
+   0.5475E-03 (  9,  1, 21)  0.4332E-04 (  2,  1, 21)  0.4985E-04 (  5,  1, 21)  0.1403E-04 (  3,  1, 21)  0.1350E-05 (  1,  1,  1)
+   0.2359E-05 (  4,  1, 21)  0.5883E-06 (  1,  1, 21)
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   15
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.8737878E-01DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   15, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    0.000000                   -15.12964    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    15.12993                  -0.2514058E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    15.12994     KG            -15.12994     KG  
+
+                                                          NET (IN - OUT):  -0.1771469E-05
+                                                   DISCREPANCY (PERCENT):  -0.1170837E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    13 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.5453E-02  0 -0.2529E-02  0  0.1431E-02  0  0.7923E-03  0  0.5580E-03
+   ( 10,  1,  1)  (  7,  1, 16)  (  3,  1,  9)  ( 10,  1,  1)  (  2,  1,  4)
+  0  0.3945E-03  0  0.2149E-03  0  0.7418E-04  0  0.2279E-04  0  0.7664E-05
+   (  7,  1,  1)  (  3,  1,  2)  (  9,  1,  1)  (  7,  1,  5)  ( 10,  1,  1)
+  0  0.2569E-05  0 -0.1099E-05  1 -0.4314E-06
+   ( 10,  1, 19)  (  9,  1, 11)  ( 10,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1   3705.      0   964.7      0   336.0      0   180.7      0  -139.5    
+   ( 10,  1, 20)  (  9,  1, 20)  (  2,  1, 20)  (  1,  1, 20)  (  9,  1, 20)
+  0  -84.49      0  -62.45      0  -35.71      0   21.07      0  -7.019    
+   (  4,  1, 20)  (  2,  1, 20)  (  1,  1, 20)  (  2,  1, 19)  (  1,  1, 20)
+  0  -2.214      0  0.8400      1  0.4756    
+   (  2,  1, 18)  (  3,  1, 18)  (  2,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.6447E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.3223E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.3667E-02(WHEN MIN. R.F.=1)  AT K=  10, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  16 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    20 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   16
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.1311682    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   16, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:   0.1462755                   -18.98237    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    18.83638                  -0.2514058E-03
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    18.98267     KG            -18.98267     KG  
+
+                                                          NET (IN - OUT):  -0.2482183E-05
+                                                   DISCREPANCY (PERCENT):  -0.1307605E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    14 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.6228E-02  0 -0.2772E-02  0  0.1510E-02  0  0.8142E-03  0  0.5140E-03
+   ( 10,  1,  1)  (  8,  1, 17)  (  3,  1,  9)  ( 10,  1,  1)  (  3,  1,  5)
+  0  0.3619E-03  0  0.2102E-03  0  0.8603E-04  0  0.2638E-04  0  0.1035E-04
+   (  8,  1,  1)  (  3,  1,  3)  (  9,  1,  1)  (  7,  1,  5)  ( 10,  1,  1)
+  0  0.3040E-05  0 -0.1065E-05  0 -0.4860E-06  1  0.3664E-06
+   ( 10,  1, 19)  (  9,  1, 11)  (  9,  1, 13)  ( 10,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1   4593.      0   1007.      0   365.8      0   217.6      0   145.0    
+   (  9,  1, 20)  (  9,  1, 20)  (  2,  1, 20)  (  1,  1, 20)  (  1,  1, 20)
+  0  -88.26      0  -64.66      0  -39.00      0   23.39      0  -7.809    
+   (  1,  1, 18)  (  1,  1, 19)  (  1,  1, 20)  (  2,  1, 19)  (  1,  1, 20)
+  0  -2.587      0   1.044      0  0.4253      1 -0.2589    
+   (  2,  1, 18)  (  2,  1, 20)  ( 10,  1, 20)  (  9,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.5917E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.2923E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.3622E-03(WHEN MIN. R.F.=1)  AT K=  10, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  17 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    18 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   17
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.1968523    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   17, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    2.367550                   -23.56146    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    21.23497                  -0.4102924E-01
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    23.60254     KG            -23.60254     KG  
+
+                                                          NET (IN - OUT):  -0.2606268E-05
+                                                   DISCREPANCY (PERCENT):  -0.1104232E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    13 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.3015E-02  0  0.2762E-02  0 -0.6833E-03  0 -0.3965E-03  0  0.2480E-03
+   ( 10,  1,  1)  (  4,  1,  1)  (  8,  1, 17)  (  8,  1, 13)  (  2,  1,  5)
+  0  0.1877E-03  0 -0.5327E-04  0  0.5347E-04  0  0.3453E-04  0  0.1246E-04
+   ( 10,  1,  1)  ( 10,  1, 16)  (  4,  1,  1)  (  8,  1,  1)  (  8,  1,  5)
+  0  0.5437E-05  0  0.1544E-05  1  0.1039E-05
+   ( 10,  1,  1)  (  2,  1,  9)  ( 10,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -6506.      0  -1226.      0  -406.5      0   175.6      0   132.3    
+   ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)  (  9,  1, 20)  (  9,  1, 20)
+  0   70.11      0   36.33      0   23.71      0   12.01      0   5.432    
+   (  9,  1, 20)  (  9,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)
+  0  -2.578      0 -0.6901      1  0.7248    
+   (  9,  1, 20)  (  9,  1, 20)  (  9,  1, 19)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.2085E-03(WHEN MIN. R.F.=1)  AT K=  10, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.9566E-04(WHEN MIN. R.F.=1)  AT K=  10, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.9566E-04(WHEN MIN. R.F.=1)  AT K=  10, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  18 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    18 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   18
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.2953784    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   18, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    16.69562                   -37.66735    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    21.83167                  -0.8599101    
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    38.52731     KG            -38.52731     KG  
+
+                                                          NET (IN - OUT):  -0.2112581E-05
+                                                   DISCREPANCY (PERCENT):  -0.5483334E-05
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    13 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  0.4551E-02  0  0.2384E-02  0 -0.1481E-02  0 -0.4574E-03  0 -0.1939E-03
+   ( 10,  1, 17)  ( 10,  1,  1)  (  6,  1,  2)  (  4,  1, 15)  (  4,  1, 18)
+  0 -0.1513E-03  0 -0.5649E-04  0 -0.3086E-04  0  0.1609E-04  0 -0.5696E-05
+   ( 10,  1,  1)  (  7,  1, 16)  (  8,  1, 12)  ( 10,  1,  1)  ( 10,  1, 11)
+  0  0.4641E-05  0  0.1774E-05  1  0.1074E-05
+   (  9,  1,  1)  (  8,  1,  4)  ( 10,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -1630.      0  -602.3      0   396.6      0   334.9      0   255.2    
+   (  8,  1, 20)  (  6,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)
+  0   152.1      0   83.92      0   35.34      0   14.49      0   4.532    
+   ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)  (  1,  1, 20)
+  0   1.679      0 -0.7700      1  0.5736    
+   (  2,  1, 18)  (  2,  1, 20)  (  8,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.3413E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.1642E-03(WHEN MIN. R.F.=1)  AT K=   3, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.2334E-03(WHEN MIN. R.F.=1)  AT K=  10, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  19 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    18 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   19
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.4431676    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   19, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    38.52067                   -58.61184    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    21.87693                   -1.785725    
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    60.39762     KG            -60.39762     KG  
+
+                                                          NET (IN - OUT):  -0.2210115E-05
+                                                   DISCREPANCY (PERCENT):  -0.3659275E-05
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    13 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  0.2491E-02  0 -0.1430E-02  0  0.3367E-03  0 -0.2393E-03  0 -0.1055E-03
+   ( 10,  1, 11)  ( 10,  1,  1)  ( 10,  1,  1)  (  9,  1,  1)  (  4,  1,  5)
+  0 -0.1259E-03  0  0.3887E-04  0 -0.2317E-04  0 -0.8900E-05  0 -0.3080E-05
+   ( 10,  1,  1)  ( 10,  1, 17)  (  2,  1, 10)  ( 10,  1,  1)  (  9,  1,  7)
+  0 -0.1900E-05  0 -0.5806E-06  1 -0.5068E-06
+   (  2,  1, 14)  (  1,  1, 17)  (  6,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -1906.      0  -323.8      0   236.0      0   160.2      0   93.12    
+   (  6,  1, 20)  (  9,  1, 19)  ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)
+  0   33.33      0   19.68      0   11.69      0   6.469      0  -3.448    
+   (  2,  1, 20)  (  2,  1, 20)  (  1,  1, 20)  (  1,  1, 20)  ( 10,  1, 20)
+  0  -1.634      0 -0.4741      1 -0.3701    
+   ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.3217E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.1566E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.4081E-03(WHEN MIN. R.F.=1)  AT K=   8, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  20 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    17 TOTAL ITERATIONS
+  MAXIMUM CONCENTRATION CHANGES FOR EACH ITERATION:
+  MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL
+ ------------------------------------------------------------------------------------------------------------------------------------
+   0.8668E-01 ( 10,  1, 12)  0.1346E-01 ( 10,  1, 12)  0.4777E-01 (  4,  1, 21)  0.6647E-01 (  4,  1, 21)  0.3356E-02 (  7,  1, 14)
+   0.3137E-02 (  3,  1, 20)  0.1654E-01 (  2,  1, 21)  0.6595E-02 (  2,  1, 21)  0.1008E-02 (  1,  1, 21)  0.4154E-02 (  1,  1, 21)
+   0.3943E-02 (  1,  1, 21)  0.1186E-01 (  1,  1, 21)  0.1140E-01 (  1,  1, 21)  0.8188E-04 (  1,  1, 21)  0.1884E-03 (  1,  1, 21)
+   0.1233E-04 (  1,  1, 21)  0.6090E-06 (  2,  1, 21)
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   20
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.6648513    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   20, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    62.53638                   -82.63368    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    21.99485                   -1.897633    
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    84.53125     KG            -84.53137     KG  
+
+                                                          NET (IN - OUT):  -0.1124978E-03
+                                                   DISCREPANCY (PERCENT):  -0.1330841E-03
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+    11 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.1741E-03  0 -0.3204E-03  0  0.1626E-03  0  0.3471E-04  0  0.3170E-04
+   ( 10,  1, 17)  ( 10,  1,  1)  ( 10,  1,  2)  (  3,  1, 14)  (  9,  1, 13)
+  0  0.1205E-04  0  0.8004E-05  0  0.4006E-05  0 -0.2437E-05  0 -0.8412E-06
+   ( 10,  1,  1)  (  7,  1, 16)  ( 10,  1, 12)  ( 10,  1,  1)  (  8,  1,  5)
+  1 -0.2881E-06
+   ( 10,  1,  1)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1   332.1      0   168.1      0   53.42      0  -25.49      0  -16.64    
+   (  9,  1, 20)  (  9,  1, 20)  (  9,  1, 20)  (  9,  1, 14)  (  8,  1, 19)
+  0  -8.595      0  -5.399      0  -2.741      0  -1.373      0 -0.4082    
+   (  7,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)  ( 10,  1, 20)
+  1 -0.2512    
+   ( 10,  1, 20)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.3238E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.1575E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.3828E-03(WHEN MIN. R.F.=1)  AT K=   7, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  21 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    14 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   21
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =  0.9973770    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   21, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    99.78345                   -119.9620    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    22.08018                   -1.901526    
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    121.8636     KG            -121.8636     KG  
+
+                                                          NET (IN - OUT):   0.7500884E-04
+                                                   DISCREPANCY (PERCENT):   0.6155147E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+     9 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1 -0.1065E-03  0  0.9358E-04  0  0.4071E-04  0  0.2732E-04  0  0.7547E-05
+   ( 10,  1,  6)  ( 10,  1,  1)  (  5,  1,  9)  (  8,  1,  1)  (  1,  1, 14)
+  0  0.7741E-05  0  0.2748E-05  0  0.1545E-05  1 -0.5203E-06
+   ( 10,  1,  1)  (  4,  1,  6)  (  4,  1,  2)  (  8,  1, 16)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -165.6      0  -51.08      0   21.23      0   11.87      0   6.167    
+   (  7,  1, 20)  (  7,  1, 20)  (  8,  1, 20)  (  8,  1, 20)  (  8,  1, 20)
+  0   2.815      0  -1.255      0 -0.7310      1 -0.4888    
+   (  6,  1, 20)  (  9,  1, 20)  (  8,  1, 20)  (  9,  1, 18)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.3224E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.1569E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.3489E-03(WHEN MIN. R.F.=1)  AT K=   7, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  22 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    19 TOTAL ITERATIONS
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   22
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =   1.496166    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   22, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    155.8463                   -176.0116    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    22.08638                   -1.920937    
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    177.9327     KG            -177.9326     KG  
+
+                                                          NET (IN - OUT):   0.6413908E-04
+                                                   DISCREPANCY (PERCENT):   0.3604683E-04
+ 
+ SOLVING FOR HEAD 
+
+
+     2 CALLS TO PCG ROUTINE FOR TIME STEP   1 IN STRESS PERIOD    1
+     8 TOTAL ITERATIONS
+
+ MAXIMUM HEAD CHANGE FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE    HEAD CHANGE 
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  0.3941E-04  0 -0.2297E-04  0  0.1246E-04  0 -0.7749E-05  0  0.3713E-05
+   ( 10,  1, 14)  ( 10,  1, 11)  (  9,  1,  6)  ( 10,  1,  2)  ( 10,  1,  1)
+  0 -0.2798E-05  0  0.1015E-05  1 -0.4534E-06
+   ( 10,  1,  1)  (  9,  1, 16)  (  7,  1, 14)
+
+ MAXIMUM RESIDUAL FOR EACH ITERATION (1 INDICATES THE FIRST INNER ITERATION):
+
+    RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL       RESIDUAL    
+   LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL  LAYER,ROW,COL
+ ---------------------------------------------------------------------------
+  1  -44.55      0  -10.98      0  -9.377      0  -5.832      0  -3.500    
+   (  7,  1, 20)  (  8,  1, 19)  (  8,  1, 19)  (  8,  1, 19)  (  8,  1, 19)
+  0   1.191      0  0.6308      1  0.3748    
+   (  9,  1, 19)  (  9,  1, 19)  (  9,  1, 19)
+
+
+ FLOW MODEL IS TRANSIENT
+ FLOW MODEL CONTAINS CONSTANT-HEAD CELLS
+
+
+ MAXIMUM STEPSIZE DURING WHICH ANY PARTICLE CANNOT MOVE MORE THAN ONE CELL
+ = 0.3222E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE ADVECTION TERM
+ (FOR PURE FINITE-DIFFERENCE OPTION, MIXELM=0) 
+ = 0.1567E-03(WHEN MIN. R.F.=1)  AT K=   2, I=   1, J=  21
+
+
+ TOTAL NUMBER OF POINT SOURCES/SINKS PRESENT IN THE FLOW MODEL =    20
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE SINK & SOURCE TERM
+ = 0.3397E-03(WHEN MIN. R.F.=1)  AT K=   7, I=   1, J=  21
+
+ MAXIMUM STEPSIZE WHICH MEETS STABILITY CRITERION OF THE DISPERSION TERM
+ = 0.7128E-03(WHEN MIN. R.F.=1)  AT K=   1, I=   1, J=  20
+     1 CALLS TO GCG PACKAGE FOR TRANSPORT TIME STEP  23 IN FLOW TIME STEP   1 STRESS PERIOD   1
+    15 TOTAL ITERATIONS
+  MAXIMUM CONCENTRATION CHANGES FOR EACH ITERATION:
+  MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL MAX. CHANGE LAYER,ROW,COL
+ ------------------------------------------------------------------------------------------------------------------------------------
+   0.2282E-02 ( 10,  1, 12)  0.1126E-02 (  7,  1, 21)  0.2256E-02 (  4,  1, 19)  0.1353E-02 (  5,  1, 18)  0.1994E-03 ( 10,  1, 13)
+   0.4174E-03 (  3,  1, 21)  0.1547E-03 (  4,  1, 21)  0.9234E-05 (  2,  1, 21)  0.8409E-04 (  1,  1, 21)  0.1627E-03 (  2,  1, 21)
+   0.7420E-04 (  1,  1, 21)  0.3356E-04 (  1,  1, 21)  0.3582E-05 (  1,  1, 21)  0.1021E-04 (  1,  1, 21)  0.7742E-06 (  1,  1, 21)
+ UBUDSV SAVING "         STORAGE" ON UNIT 50 AT TIME STEP  1, STRESS PERIOD    1
+ UBUDSV SAVING "   CONSTANT HEAD" ON UNIT 50 AT TIME STEP  1, STRESS PERIOD    1
+ UBUDSV SAVING "FLOW RIGHT FACE " ON UNIT 50 AT TIME STEP  1, STRESS PERIOD    1
+ UBUDSV SAVING "FLOW LOWER FACE " ON UNIT 50 AT TIME STEP  1, STRESS PERIOD    1
+ UBUDSV SAVING "           WELLS" ON UNIT 54 AT TIME STEP  1, STRESS PERIOD    1
+ UBUDSV SAVING "            DCDT" ON UNIT 50 AT TIME STEP  1, STRESS PERIOD    1
+
+
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOR COMPONENT NO. 01<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+                                            -------------------------------------------
+                                                      TRANSPORT STEP NO.   23
+                                            -------------------------------------------
+
+ TOTAL ELAPSED TIME SINCE BEGINNING OF SIMULATION =   2.000000    DAY 
+ .....................................................................
+
+                     CUMMULATIVE MASS BUDGETS AT END OF TRANSPORT STEP   23, TIME STEP    1, STRESS PERIOD    1
+                     ------------------------------------------------------------------------------------------
+
+                                                             IN                           OUT
+                                                      ----------------             ----------------
+                               CONSTANT CONCENTRATION:    0.000000                    0.000000    
+                                        CONSTANT HEAD:    211.9299                   -232.1043    
+                                                WELLS:    0.000000                    0.000000    
+                               1ST/0TH ORDER REACTION:    0.000000                    0.000000    
+                                MASS STORAGE (SOLUTE):    22.09729                   -1.922637    
+                                MASS STORAGE (SORBED):    0.000000                    0.000000    
+                            ---------------------------------------------------------------------------
+                                              [TOTAL]:    234.0272     KG            -234.0270     KG  
+
+                                                          NET (IN - OUT):   0.2400803E-03
+                                                   DISCREPANCY (PERCENT):   0.1025865E-03
+
+ HEAD WILL BE SAVED ON UNIT   30 AT END OF TIME STEP   1, STRESS PERIOD    1
+
+ DRAWDOWN WILL BE SAVED ON UNIT   31 AT END OF TIME STEP   1, STRESS PERIOD    1
+1
+  MASS BUDGET FOR ENTIRE MODEL AT END OF TIME STEP  1 IN STRESS PERIOD   1
+  ------------------------------------------------------------------------------
+
+     CUMULATIVE MASS      M       RATES FOR THIS TIME STEP      M/T
+     ------------------                 ------------------------
+
+           IN:                                      IN:
+           ---                                      ---
+             STORAGE =       1.3015E-03               STORAGE =       4.3290E-10
+       CONSTANT HEAD =        5916.1228         CONSTANT HEAD =        3106.6727
+               WELLS =       11404.0000                 WELLS =        5702.0000
+                DCDT =          23.5753                  DCDT =       8.8484E-03
+
+            TOTAL IN =       17343.6994              TOTAL IN =        8808.6816
+
+          OUT:                                     OUT:
+          ----                                     ----
+             STORAGE =       2.2683E-03               STORAGE =       5.9370E-06
+       CONSTANT HEAD =       17342.1045         CONSTANT HEAD =        8809.6024
+               WELLS =           0.0000                 WELLS =           0.0000
+                DCDT =           2.0159                  DCDT =       2.7486E-02
+
+           TOTAL OUT =       17344.1226             TOTAL OUT =        8809.6299
+
+            IN - OUT =          -0.4232              IN - OUT =          -0.9483
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =          -0.01
+
+
+
+0
+
+
+          TIME SUMMARY AT END OF TRANSPORT STEP   23 IN TIME STEP    1 IN STRESS PERIOD   1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+  TRANS STEP LENGTH  43531.      725.52      12.092     0.50383     1.37942E-03
+   TIME STEP LENGTH 1.72800E+05  2880.0      48.000      2.0000     5.47570E-03
+ STRESS PERIOD TIME 1.72800E+05  2880.0      48.000      2.0000     5.47570E-03
+         TOTAL TIME 1.72800E+05  2880.0      48.000      2.0000     5.47570E-03
+1

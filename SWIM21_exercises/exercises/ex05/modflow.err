@@ -1,0 +1,34 @@
+
+ ========== TRANSLATION TO MODFLOW2000 ==========
+
+
+
+ >>>>> Testing Layer Elevations <<<<<
+     0 ERRORS,   0 WARNINGS
+
+ >>>>> Translating LAYER-PROPERTY-FLOW Package <<<<<
+
+ Warning -- When using the MODFLOW2000 LPF Package, be sure that S in the GV database represents Specific Storage
+     This is different from the MODFLOW BCF Package where Storage is defined.
+
+ >>>>> Translating WELL 1 Package <<<<<
+
+
+ >>>>> Translating Time-Variant Specified Head (CHD) Package <<<<<
+     0 ERRORS,   0 WARNINGS
+
+ >>>>> Translating ZONE Package <<<<<
+
+
+ >>>>> Translating BASIC Package <<<<<
+
+
+ >>>>> Testing Layer Elevations <<<<<
+     0 ERRORS,   0 WARNINGS     0 ERRORS,   0 WARNINGS
+
+ >>>>> Translating Discretization Package <<<<<
+
+ WARNING -- Transition from column  21 to  20 violates 50 percent convention 
+     0 ERRORS,   1 WARNINGS
+
+ ========== TRANSLATION COMPLETE! ==========

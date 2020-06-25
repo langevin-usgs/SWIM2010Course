@@ -1,0 +1,42 @@
+ PARAMETER STATISTICAL MATRICES: CASE swi_ie
+
+ OPTIMISATION ITERATION NUMBER  5
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ shall_hk          k_pg             50.2406         1.721145E-03
+ deep_hk           k_pg             1035.11         2.334857E-03
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                shall_hk     deep_hk   
+ shall_hk       2.9623E-06   1.5635E-06
+ deep_hk        1.5635E-06   5.4516E-06
+
+
+ Parameter correlation coefficient matrix ----->
+
+                shall_hk     deep_hk   
+ shall_hk        1.000       0.3891    
+ deep_hk        0.3891        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2   
+ shall_hk       0.9008       0.4343    
+ deep_hk       -0.4343       0.9008    
+
+
+ Eigenvalues ----->
+
+                2.2085E-06   6.2054E-06

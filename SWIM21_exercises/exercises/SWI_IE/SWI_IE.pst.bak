@@ -1,0 +1,59 @@
+pcf
+* control data
+restart  estimation
+      7    21     2     0     3
+     3     3 single  point  1   0   0
+ 10.0  2.0  0.3  0.03  10  999
+ 20.0  20.0  0.001
+ 0.1  noaui
+   5  0.005  4  4  0.005  4
+ 1  1  1
+* parameter groups
+ k_pg     relative    0.01  0.0  switch  2.0 parabolic
+ p_pg     relative    0.01  0.0  switch  2.0 parabolic
+* parameter data
+ shall_hk     log    factor      100    25      150    k_pg     1.0  0.0  1
+ shall_vk     tied   relative    1      0.1     2      k_pg     1.0  0.0  1
+ deep_hk      log    factor      2000   500     2500   k_pg     1.0  0.0  1
+ deep_vk      tied   relative    200    25      250    k_pg     1.0  0.0  1
+ confine      fixed  relative    0.001  0.0001  0.01   k_pg     1.0  0.0  1
+ dsp          fixed  relative    10.0   5       20     k_pg     1.0  0.0  1
+ porosity     fixed  relative    0.2   0.1      0.3    p_pg     1.0  0.0  1
+ shall_vk shall_hk
+ deep_vk deep_hk
+* observation groups
+ heads
+ conc
+ age
+* observation data
+ p1_head              0.7697199        26.9906      heads
+ p2_head               2.168161        26.9906      heads
+ p3_head               2.124325        26.9906      heads
+ p4_head             -1.4090650E-03    26.9906      heads
+ p5_head               2.433418        26.9906      heads
+ p6_head               1.980837        26.9906      heads
+ p7_head               3.167780        26.9906      heads
+ p1_conc               18.98500        3.79570      conc
+ p2_conc               1.737900        3.79570      conc
+ p3_conc               0.000000        3.79570      conc
+ p4_conc               35.00200        3.79570      conc
+ p5_conc               0.000000        3.79570      conc
+ p6_conc               0.000000        3.79570      conc
+ p7_conc               0.000000        3.79570      conc
+ p1_age                32478.00       4.491033E-03  age
+ p2_age                36723.00       4.491033E-03  age
+ p3_age                14060.00       4.491033E-03  age
+ p4_age                2932.000       4.491033E-03  age
+ p5_age                28635.00       4.491033E-03  age
+ p6_age                39822.00       4.491033E-03  age
+ p7_age                11837.00       4.491033E-03  age
+* model command line
+ swt2k.bat
+* model input/output
+ SWI_IE_modlpf.tpl  SWI_IE_mod.lpf
+ SWI_IE_moddsp.tpl  SWI_IE_mod.dsp
+ SWI_IE_modbtn.tpl  SWI_IE_mod.btn
+ head.ins  modeled_hd.smp
+ age.ins modeled_age.smp
+ conc.ins modeled_c.smp
+* prior information

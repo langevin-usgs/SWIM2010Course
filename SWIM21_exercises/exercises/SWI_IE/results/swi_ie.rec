@@ -1,0 +1,492 @@
+
+                      PEST RUN RECORD: CASE swi_ie
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    7
+   Number of adjustable parameters                :    2
+   Number of parameter groups                     :    2
+   Number of observations                         :   21
+   Number of prior estimates                      :    0
+
+
+Model command line(s):-
+
+   swt_v4.bat
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      SWI_IE_modlpf.tpl
+      SWI_IE_moddsp.tpl
+      SWI_IE_modbtn.tpl
+   for model input files:
+      SWI_IE_mod.lpf
+      SWI_IE_mod.dsp
+      SWI_IE_mod.btn
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      head.ins
+      age.ins
+      conc.ins
+   for reading model output files:
+      modeled_hd.smp
+      modeled_age.smp
+      modeled_c.smp
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+k_pg         relative    1.0000E-02   none        switch        2.000     parabolic
+p_pg         relative    1.0000E-02   none        switch        2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+shall_hk     log               factor      100.000        25.0000        150.000    
+shall_vk     tied shall_hk       na        1.00000          na             na
+deep_hk      log               factor      2000.00        500.000        2500.00    
+deep_vk      tied deep_hk        na        200.000          na             na
+confine      fixed               na       1.000000E-03      na             na
+dsp          fixed               na        10.0000          na             na
+porosity     fixed               na       0.200000          na             na
+
+Name         Group          Scale         Offset        Model command number
+shall_hk     k_pg          1.00000        0.00000            1
+shall_vk     k_pg          1.00000        0.00000            1
+deep_hk      k_pg          1.00000        0.00000            1
+deep_vk      k_pg          1.00000        0.00000            1
+confine      k_pg          1.00000        0.00000            1
+dsp          k_pg          1.00000        0.00000            1
+porosity     p_pg          1.00000        0.00000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ p1_head                0.769720          26.99       heads       
+ p2_head                 2.16816          26.99       heads       
+ p3_head                 2.12432          26.99       heads       
+ p4_head               -1.409065E-03      26.99       heads       
+ p5_head                 2.43342          26.99       heads       
+ p6_head                 1.98084          26.99       heads       
+ p7_head                 3.16778          26.99       heads       
+ p1_conc                 18.9850          3.796       conc        
+ p2_conc                 1.73790          3.796       conc        
+ p3_conc                 0.00000          3.796       conc        
+ p4_conc                 35.0020          3.796       conc        
+ p5_conc                 0.00000          3.796       conc        
+ p6_conc                 0.00000          3.796       conc        
+ p7_conc                 0.00000          3.796       conc        
+ p1_age                  32478.0         4.4910E-03   age         
+ p2_age                  36723.0         4.4910E-03   age         
+ p3_age                  14060.0         4.4910E-03   age         
+ p4_age                  2932.00         4.4910E-03   age         
+ p5_age                  28635.0         4.4910E-03   age         
+ p6_age                  39822.0         4.4910E-03   age         
+ p7_age                  11837.0         4.4910E-03   age         
+
+
+Control settings:-
+
+   Initial lambda                                               :  10.000    
+   Lambda adjustment factor                                     :  2.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+
+   Perform Broyden's update of Jacobian matrix                  : yes
+   Maximum number of updates per iteration                      : 999
+
+   Maximum  factor  parameter change (factor-limited changes)   :  20.000
+   Maximum relative parameter change (relative-limited changes) :   na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000     
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.50000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.50000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :   5
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+  Sum of squared weighted residuals (ie phi)                =   3010.9    
+  Contribution to phi from observation group "heads"        =   999.96    
+  Contribution to phi from observation group "conc"         =   999.93    
+  Contribution to phi from observation group "age"          =   1011.0    
+
+      Current parameter values
+      shall_hk         100.000    
+      shall_vk         1.00000    
+      deep_hk          2000.00    
+      deep_vk          200.000    
+      confine         1.000000E-03
+      dsp              10.0000    
+      porosity        0.200000    
+
+
+OPTIMISATION ITERATION NO.        :    1
+   Model calls so far             :    1
+   Starting phi for this iteration                          :   3010.9    
+   Contribution to phi from observation group "heads"       :   999.96    
+   Contribution to phi from observation group "conc"        :   999.93    
+   Contribution to phi from observation group "age"         :   1011.0    
+
+       Lambda =   10.000     ----->
+          Phi =   989.47      (  0.329 of starting phi)
+
+       Broyden's update of Jacobian matrix underaken.
+
+       Lambda =   5.0000     ----->
+          Phi =   414.71      (  0.138 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:   414.71    
+
+      Current parameter values                 Previous parameter values
+      shall_hk         55.4291                 shall_hk          100.000    
+      shall_vk        0.554291                 shall_vk          1.00000    
+      deep_hk          1938.45                 deep_hk           2000.00    
+      deep_vk          193.845                 deep_vk           200.000    
+      confine         1.000000E-03             confine          1.000000E-03
+      dsp              10.0000                 dsp               10.0000    
+      porosity        0.200000                 porosity         0.200000    
+   Maximum   factor change:  1.804     ["shall_hk"]
+   Maximum relative change: 0.4457     ["shall_hk"]
+
+
+OPTIMISATION ITERATION NO.        :    2
+   Model calls so far             :    5
+   Starting phi for this iteration                          :   414.71    
+   Contribution to phi from observation group "heads"       :   117.25    
+   Contribution to phi from observation group "conc"        :   126.50    
+   Contribution to phi from observation group "age"         :   170.96    
+
+       Lambda =   2.5000     ----->
+          Phi =   203.30      (  0.490 of starting phi)
+
+       Broyden's update of Jacobian matrix underaken.
+
+       Lambda =   1.2500     ----->
+          Phi =   18.505      (  0.045 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:   18.505    
+
+      Current parameter values                 Previous parameter values
+      shall_hk         49.3399                 shall_hk          55.4291    
+      shall_vk        0.493399                 shall_vk         0.554291    
+      deep_hk          1091.94                 deep_hk           1938.45    
+      deep_vk          109.194                 deep_vk           193.845    
+      confine         1.000000E-03             confine          1.000000E-03
+      dsp              10.0000                 dsp               10.0000    
+      porosity        0.200000                 porosity         0.200000    
+   Maximum   factor change:  1.775     ["deep_hk"]
+   Maximum relative change: 0.4367     ["deep_hk"]
+
+
+OPTIMISATION ITERATION NO.        :    3
+   Model calls so far             :    9
+   Starting phi for this iteration                          :   18.505    
+   Contribution to phi from observation group "heads"       :  0.48770    
+   Contribution to phi from observation group "conc"        :   1.1045    
+   Contribution to phi from observation group "age"         :   16.913    
+
+       Lambda =  0.62500     ----->
+          Phi =   17.545      (  0.948 of starting phi)
+
+       Broyden's update of Jacobian matrix underaken.
+
+       Lambda =  0.31250     ----->
+          Phi =   10.623      (  0.574 of starting phi)
+
+       Broyden's update of Jacobian matrix underaken.
+
+       Lambda =  0.15625     ----->
+          Phi =   12.597      (  0.681 of starting phi)
+
+   No more lambdas: phi rising
+   Lowest phi this iteration:   10.623    
+
+      Current parameter values                 Previous parameter values
+      shall_hk         49.2851                 shall_hk          49.3399    
+      shall_vk        0.492851                 shall_vk         0.493399    
+      deep_hk          1027.33                 deep_hk           1091.94    
+      deep_vk          102.733                 deep_vk           109.194    
+      confine         1.000000E-03             confine          1.000000E-03
+      dsp              10.0000                 dsp               10.0000    
+      porosity        0.200000                 porosity         0.200000    
+   Maximum   factor change:  1.063     ["deep_hk"]
+   Maximum relative change: 5.9173E-02 ["deep_hk"]
+
+
+OPTIMISATION ITERATION NO.        :    4
+   Model calls so far             :   14
+   Starting phi for this iteration                          :   10.623    
+   Contribution to phi from observation group "heads"       :  0.17348    
+   Contribution to phi from observation group "conc"        :  0.20363    
+   Contribution to phi from observation group "age"         :   10.246    
+
+       Lambda =  0.15625     ----->
+          Phi =   2.0182      (  0.190 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:   2.0182    
+
+      Current parameter values                 Previous parameter values
+      shall_hk         50.1580                 shall_hk          49.2851    
+      shall_vk        0.501580                 shall_vk         0.492851    
+      deep_hk          1010.72                 deep_hk           1027.33    
+      deep_vk          101.072                 deep_vk           102.733    
+      confine         1.000000E-03             confine          1.000000E-03
+      dsp              10.0000                 dsp               10.0000    
+      porosity        0.200000                 porosity         0.200000    
+   Maximum   factor change:  1.018     ["shall_hk"]
+   Maximum relative change: 1.7712E-02 ["shall_hk"]
+
+
+OPTIMISATION ITERATION NO.        :    5
+   Model calls so far             :   17
+   Starting phi for this iteration                          :   2.0182    
+   Contribution to phi from observation group "heads"       :  7.13489E-02
+   Contribution to phi from observation group "conc"        :  0.21992    
+   Contribution to phi from observation group "age"         :   1.7269    
+
+       Lambda =  7.81250E-02 ----->
+          Phi =   4.4732      (  2.216 times starting phi)
+
+       Broyden's update of Jacobian matrix underaken.
+
+       Lambda =  3.90625E-02 ----->
+          Phi =   6.6514      (  3.296 times starting phi)
+
+       Broyden's update of Jacobian matrix underaken.
+
+       Lambda =  0.15625     ----->
+          Phi =   3.0189      (  1.496 times starting phi)
+
+       Broyden's update of Jacobian matrix underaken.
+
+       Lambda =  0.31250     ----->
+          Phi =   3.9883      (  1.976 times starting phi)
+
+   No more lambdas: phi rising
+   Lowest phi this iteration:   3.0189    
+   Relative phi reduction between optimisation iterations less than 0.1000
+   Switch to central derivatives calculation
+   (restart from best parameters so far - these achieved at iteration    4)
+
+      Current parameter values
+      shall_hk         50.1580    
+      shall_vk        0.501580    
+      deep_hk          1010.72    
+      deep_vk          101.072    
+      confine         1.000000E-03
+      dsp              10.0000    
+      porosity        0.200000    
+
+   Optimisation complete: optimisation iteration limit of   5 realized.
+   Total model calls:   23
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+
+Adjustable parameters ----->
+
+Parameter        Estimated         95% percent confidence limits
+                 value             lower limit       upper limit
+ shall_hk        50.1580            49.9361           50.3809    
+ deep_hk         1010.72            1006.64           1014.82    
+
+Note: confidence limits provide only an indication of parameter uncertainty.
+      They rely on a linearity assumption which  may not extend as far in 
+      parameter space as the confidence limits themselves - see PEST manual.
+
+
+Tied parameters ----->
+
+Parameter      Estimated value
+ shall_vk       0.501580    
+ deep_vk         101.072    
+
+
+Fixed parameters ----->
+
+Parameter      Fixed value
+ confine        1.000000E-03
+ dsp             10.0000    
+ porosity       0.200000    
+
+See file swi_ie.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+p1_head               0.769720       0.768538       1.181900E-03    26.99      heads       
+p2_head                2.16816        2.16485       3.311000E-03    26.99      heads       
+p3_head                2.12432        2.11949       4.839000E-03    26.99      heads       
+p4_head              -1.409065E-03  -6.914394E-04  -7.176256E-04    26.99      heads       
+p5_head                2.43342        2.43128       2.139000E-03    26.99      heads       
+p6_head                1.98084        1.97841       2.425000E-03    26.99      heads       
+p7_head                3.16778        3.16063       7.155000E-03    26.99      heads       
+p1_conc                18.9850        18.9714       1.359000E-02    3.796      conc        
+p2_conc                1.73790        1.85984      -0.121942        3.796      conc        
+p3_conc                0.00000       8.552622E-15  -8.552622E-15    3.796      conc        
+p4_conc                35.0020        34.9875       1.449000E-02    3.796      conc        
+p5_conc                0.00000       2.845248E-19  -2.845248E-19    3.796      conc        
+p6_conc                0.00000       2.943071E-09  -2.943071E-09    3.796      conc        
+p7_conc                0.00000        0.00000        0.00000        3.796      conc        
+p1_age                 32478.0        32607.1       -129.060       4.4910E-03  age         
+p2_age                 36723.0        36667.6        55.4500       4.4910E-03  age         
+p3_age                 14060.0        14047.5        12.4600       4.4910E-03  age         
+p4_age                 2932.00        2720.84        211.156       4.4910E-03  age         
+p5_age                 28635.0        28607.0        28.0100       4.4910E-03  age         
+p6_age                 39822.0        39928.8       -106.770       4.4910E-03  age         
+p7_age                 11837.0        11742.3        94.6700       4.4910E-03  age         
+
+See file swi_ie.res for more details of residuals in graph-ready format.
+
+See file swi_ie.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =   2.018    
+  Contribution to phi from observation group "heads"        =  7.1349E-02
+  Contribution to phi from observation group "conc"         =  0.2199    
+  Contribution to phi from observation group "age"          =   1.727    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =   1.000    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =    21
+     Mean value of non-zero weighted residuals                      =  4.4651E-02
+     Maximum weighted residual [observation "p4_age"]               =  0.9483    
+     Minimum weighted residual [observation "p1_age"]               = -0.5796    
+     Standard variance of weighted residuals                        =  0.1062    
+     Standard error of weighted residuals                           =  0.3259    
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "heads":-
+     Number of residuals with non-zero weight                       =     7
+     Mean value of non-zero weighted residuals                      =  7.8401E-02
+     Maximum weighted residual [observation "p7_head"]              =  0.1931    
+     Minimum weighted residual [observation "p4_head"]              = -1.9369E-02
+     "Variance" of weighted residuals                               =  1.0193E-02
+     "Standard error" of weighted residuals                         =  0.1010    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "conc":-
+     Number of residuals with non-zero weight                       =     7
+     Mean value of non-zero weighted residuals                      = -5.0896E-02
+     Maximum weighted residual [observation "p4_conc"]              =  5.5000E-02
+     Minimum weighted residual [observation "p2_conc"]              = -0.4629    
+     "Variance" of weighted residuals                               =  3.1417E-02
+     "Standard error" of weighted residuals                         =  0.1772    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "age":-
+     Number of residuals with non-zero weight                       =     7
+     Mean value of non-zero weighted residuals                      =  0.1064    
+     Maximum weighted residual [observation "p4_age"]               =  0.9483    
+     Minimum weighted residual [observation "p1_age"]               = -0.5796    
+     "Variance" of weighted residuals                               =  0.2467    
+     "Standard error" of weighted residuals                         =  0.4967    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+
+Parameter covariance matrix ----->
+
+               shall_hk     deep_hk   
+shall_hk       8.4673E-07  -4.1282E-07
+deep_hk       -4.1282E-07   7.0452E-07
+
+
+Parameter correlation coefficient matrix ----->
+
+               shall_hk     deep_hk   
+shall_hk        1.000      -0.5345    
+deep_hk       -0.5345        1.000    
+
+
+Normalized eigenvectors of parameter covariance matrix ----->
+
+              Vector_1     Vector_2   
+shall_hk       0.6443      -0.7648    
+deep_hk        0.7648       0.6443    
+
+
+Eigenvalues ----->
+
+               3.5672E-07   1.1945E-06

@@ -1,0 +1,90 @@
+HR {
+	COLOR: #000000
+}
+BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: 'Times New Roman'; TEXT-DECORATION: none
+}
+TABLE {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: 'Times New Roman'; TEXT-DECORATION: none
+}
+SPAN.f_Citation {
+	FONT-STYLE: italic
+}
+SPAN.f_CodeExample {
+	COLOR: #000000; FONT-FAMILY: 'Courier New'
+}
+SPAN.f_Comment {
+	
+}
+SPAN.f_CourierFixed {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: 'Courier New'
+}
+SPAN.f_Heading1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt
+}
+SPAN.f_Heading2 {
+	FONT-WEIGHT: bold
+}
+SPAN.f_Heading3 {
+	FONT-WEIGHT: bold; FONT-STYLE: italic
+}
+SPAN.f_ImageCaption {
+	FONT-WEIGHT: bold
+}
+SPAN.f_Indentedbullet {
+	
+}
+SPAN.f_Keywords {
+	FONT-WEIGHT: bold; FONT-STYLE: italic
+}
+SPAN.f_NewMaterials {
+	FONT-WEIGHT: bold; COLOR: #000000; FONT-FAMILY: 'Courier New'
+}
+SPAN.f_NewStyle {
+	
+}
+SPAN.f_Notes {
+	
+}
+SPAN.f_TableHeader {
+	FONT-WEIGHT: bold
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 6px; TEXT-INDENT: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.p_Citation {
+	
+}
+.p_CodeExample {
+	BACKGROUND: #ccffff; MARGIN: 0px; WHITE-SPACE: nowrap
+}
+.p_Comment {
+	
+}
+.p_Heading1 {
+	MARGIN: 12px 0px 6px
+}
+.p_Heading2 {
+	MARGIN: 6px 0px
+}
+.p_Heading3 {
+	
+}
+.p_ImageCaption {
+	
+}
+.p_Indentedbullet {
+	MARGIN: 0px 0px 6px 28px
+}
+.p_Keywords {
+	
+}
+.p_NewStyle {
+	
+}
+.p_Notes {
+	
+}
+.p_TableHeader {
+	TEXT-ALIGN: center
+}

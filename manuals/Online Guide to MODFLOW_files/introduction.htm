@@ -1,0 +1,177 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0071)http://water.usgs.gov/nrp/gwsoftware/modflow2000/MFDOC/introduction.htm -->
+<HTML><HEAD><TITLE>Introduction</TITLE><!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<SCRIPT src="introduction_files/helpman_topicinit.js" 
+type=text/javascript></SCRIPT>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<SCRIPT type=text/javascript>
+<!--
+if (top.location.search.lastIndexOf("toc=0")<=0) {
+  if (top.frames.length==0) { top.location.href="index.html?introduction.htm"; }
+  else { parent.quicksync('a1'); }
+}
+//-->
+</SCRIPT>
+
+<SCRIPT src="introduction_files/highlight.js" type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.6000.16850" name=GENERATOR>
+<META content="" name=keywords>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8"><LINK 
+href="introduction_files/default.css" type=text/css rel=stylesheet><!-- non-scrolling headers for CHM and browser-based help-->
+<STYLE type=text/css media=screen>BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #ffffff; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: auto; PADDING-TOP: 0px
+}
+#idheader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #649ccc; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; HEIGHT: auto
+}
+#idcontent {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; WIDTH: 100%; PADDING-TOP: 10px
+}
+#innerdiv {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.topichead {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.navlinks {
+	FONT-SIZE: 10pt
+}
+.navlinks A {
+	COLOR: blue; TEXT-DECORATION: none
+}
+.navlinks A:visited {
+	COLOR: blue; TEXT-DECORATION: none
+}
+.navlinks A:hover {
+	COLOR: blue; TEXT-DECORATION: underline
+}
+HTML.nonscroll {
+	OVERFLOW: hidden
+}
+BODY.nonscroll {
+	OVERFLOW: hidden; HEIGHT: 100%
+}
+DIV.nonscroll {
+	OVERFLOW: auto
+}
+</STYLE>
+
+<STYLE type=text/css media=print>#idnav {
+	DISPLAY: none
+}
+.topichead {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 20px; PADDING-TOP: 5px
+}
+</STYLE>
+
+<SCRIPT type=text/javascript> 
+   <!-- 
+   function doResize() { 
+     var clheight, headheight; 
+     if (self.innerHeight) // all except Explorer 
+      { clheight = self.innerHeight; } 
+     else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+      { clheight = document.documentElement.clientHeight; } 
+     else if (document.body) // other Explorers 
+      { clheight = document.body.clientHeight; } 
+     headheight = document.getElementById('idheader').clientHeight;
+     if (clheight < headheight ) {clheight = headheight + 1;}
+     document.getElementById('idcontent').style.height = clheight - document.getElementById('idheader').clientHeight +'px'; 
+   } 
+
+   function nsrInit() { 
+     contentbody = document.getElementById('idcontent'); 
+     if (contentbody) { 
+       contentbody.className = 'nonscroll'; 
+       document.getElementsByTagName('body')[0].className = 'nonscroll'; 
+       document.getElementsByTagName('html')[0].className = 'nonscroll'; 
+       window.onresize = doResize; 
+       doResize(); 
+      } 
+   } 
+--> 
+   </SCRIPT>
+</HEAD>
+<BODY onload=highlight();>
+<DIV id=hmpopupDiv 
+style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></DIV>
+<DIV id=idheader>
+<TABLE cellSpacing=0 cellPadding=5 width="100%" bgColor=#649ccc border=0>
+  <TBODY>
+  <TR vAlign=center>
+    <TD align=left>
+      <P class=p_Heading1><SPAN class=f_Heading1>Online Guide to 
+      MODFLOW</SPAN></P></TD>
+    <TD align=right><SPAN style="FONT-SIZE: 9pt"><A 
+      href="http://water.usgs.gov/nrp/gwsoftware/modflow2000/MFDOC/introduction.htm">Top</A>&nbsp; 
+      Previous&nbsp; <A 
+      href="http://water.usgs.gov/nrp/gwsoftware/modflow2000/MFDOC/frequently_asked_questions.htm">Next</A> 
+      &nbsp;<A href="javascript: print();">Print</A> 
+</SPAN></TD></TR></TBODY></TABLE></DIV>
+<DIV id=idcontent>
+<DIV id=innerdiv>
+<P><A title="USGS Home Page" href="http://www.usgs.gov/" target=_blank><IMG 
+title="USGS Home Page" height=72 alt=water_banner1 
+src="introduction_files/water_banner1.png" width=480 border=0></A></P>
+<P>&nbsp;</P>
+<P>Compiled by <A class=weblink href="mailto:rbwinst@usgs.gov">Richard B. 
+Winston</A></P>
+<P>Revised: 6/26/2009</P>
+<P class=p_Heading1><SPAN class=f_Heading1>Introduction</SPAN></P>
+<P>The purpose of these web pages is to provide a unified description of the 
+formats for MODFLOW-2000 and MODFLOW-2005 input files. &nbsp;These descriptions 
+have been copied from the original reports in which they were published and 
+supplemented with materials found in the "doc" directory of the MODFLOW-2000 or 
+MODFLOW-2005 distribution file. <SPAN style="FONT-STYLE: italic">These web pages 
+are not substitute for or a definitive guide to MODFLOW-2000 or MODFLOW-2005. 
+&nbsp;They may contain errors that are not in the original documents. &nbsp;In 
+case of doubt, consult the original documents or examine the source 
+code.</SPAN></P>
+<P>In a few cases, obvious typographical errors in the original documents have 
+been corrected in the version of the input instructions presented on these web 
+pages. &nbsp;Such changes are not marked. </P>
+<P>Some packages, such as the <A 
+href="http://water.usgs.gov/nrp/gwsoftware/modflow2000/MFDOC/ibs.htm">Interbed 
+Storage</A> package, were originally published as part of MODFLOW-88. &nbsp;In 
+such cases, the instructions for including these package in a MODFLOW-2000 or 
+MODFLOW-2005 model have been updated to reflect how the input is specified in 
+MODFLOW-2000 or MODFLOW-2005. </P>
+<P>In a few cases, the instructions have been supplemented by additional 
+material not found in the original input instructions. &nbsp;Such materials are 
+shown in a different type face like <SPAN class=f_NewMaterials>this</SPAN>. 
+&nbsp;The sources of such additional material include examination of the source 
+code, correspondence with the authors of a package, and experience. </P>
+<P>Keywords in the input files that must be entered exactly as shown (in a 
+case-insensitive manner) are displayed in these web pages in bold and italics 
+like <SPAN class=f_Keywords>this</SPAN>.</P>
+<P>Please send comments and corrections to Richard B. Winston (<A class=weblink 
+href="mailto:rbwinst@usgs.gov">rbwinst@usgs.gov</A>).</P>
+<P>This guide reflects MODFLOW-2000 version 1.18.01 and MODFLOW-2005 version 
+1.6.02</P>
+<P class=p_Heading2><SPAN class=f_Heading2>Disclaimer</SPAN></P>
+<P>Although every effort is made to provide timely and accurate information, the 
+authors, the U.S. Geological Survey (USGS), and the U.S. Government make no 
+warranty, expressed or implied, as to the timeliness or accuracy of the contents 
+of this web site, which may be updated and revised at any time. &nbsp;Any use of 
+trade, product, or firm names in this publication is for descriptive purposes 
+only and does not imply endorsement by the U.S. Government. &nbsp;Any links to 
+non-Government web sites are provided for convenience only and do not imply 
+endorsement by the U.S. Government.</P>
+<P class=p_Heading1><SPAN class=f_Heading1>Download</SPAN></P>
+<P>You can download a copy of the Online Guide to MODFLOW in the form of an 
+Windows help file from <A class=filelink 
+href="http://water.usgs.gov/nrp/gwsoftware/modflow2000/MFDOC/guide.zip">http://water.usgs.gov/nrp/gwsoftware/modflow2000/MFDOC/guide.zip</A>.</P>
+<P class=p_Heading1><SPAN class=f_Heading1></SPAN>&nbsp;</P></DIV></DIV>
+<SCRIPT type=text/javascript> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("/") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</SCRIPT>
+</BODY></HTML>

@@ -1,0 +1,29 @@
+
+ ========== GV TRANSLATION TO MT3D ==========
+
+
+
+ >>>>> Testing Layer Elevations <<<<<
+     0 ERRORS,   0 WARNINGS
+
+ >>>>> Translating BASIC Package <<<<<
+
+ WARNING -- Transition from column  21 to  20 violates 50 percent convention 
+     0 ERRORS,   1 WARNINGS
+
+ >>>>> Translating ADVECTION Package <<<<<
+
+
+ >>>>> Translating DISPERSION Package <<<<<
+
+
+ >>>>> Translating SOURCE/SINK Package <<<<<
+
+
+ >>>>> Translating REACTIONS Package <<<<<
+
+
+ >>>>> Translating MT3DMS GCG Solver Package <<<<<
+
+
+ ========== TRANSLATION COMPLETE! ==========
